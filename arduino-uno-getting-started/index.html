@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSkool: Getting started with Arduino UNO serial firmware</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <p>The first thing, before you connect any board, it to allow the connection to websockets from the SSL secured IDE.
+    You can do this by clicking the settings or lock icon in the URL address bar and then click the <em>Site settings</em> button.
+    </p>
+    <p style="text-align: center;"><img src="images/sitesettings.png" alt="site settings" style="width: 400px;"/></p>
+    <p>Now you have to allow <em>Insecure content</em>, so that the SerialLink application, which does not uses the SSL and is
+    running locally can connect to the CodeSkool IDE, which is a SSL secured website and running on HTTPS connection.</p>
+    <p style="text-align: center;"><img src="images/insecurecontent.png" alt="insecure content" style="width: 600px;"/></p>
+    <p>Once you have allowed the insecure content, you need to refresh the CodeSkool IDE, by pressing the <em>Ctrl + F5</em> keys.
+    Now you are good to go and connect the Arduino UNO to CodeSkool IDE.</p>
+    <p>To get started with Arduino UNO in CodeSkool, you need to first download the SerialLink application.
+    Go to the Boards menu at the top and select <em>Arduino UNO</em> in the boards manager.
+    Click the "<em>Upload Firmware</em>" button and you will be prompted to download the <em>uno.zip</em> file.</p>
+    <p style="text-align: center;"><img src="images/boards.png" alt="boards" style="width: 400px;"/></p>
+    <p>Once the download is complete, unzip the file and you will find the <em>SerialLink</em> application inside the folder.</p>
+    <p>Now click the "<em>Add extension</em>" button in the boards manager to add the Arduino UNO CodeSkool Scratch extension.
+    The Arduino extension will get added to the CodeSkool toolbox</p>
+    <p style="text-align: center;"><img src="images/unoextension.png" alt="Arduino UNO CodeSkool Extension" style="width: 400px;"/></p>
+    Run the downloaded SerialLink application and pass the COM port of the Arduino UNO as an argument like: <em>SerialLink.exe COM5</em><br/>
+    <p style="text-align: center;"><img src="images/seriallinkwithargs.png" alt="seriallink with port argument" style="width: 400px;"/></p>
+    or else select the port from the list of available ports shown.
+    <p>After you enter the correct COM port of Arduino UNO, it will upload the firmware to the Arduino UNO and you will see the following screen.</p>
+    <p style="text-align: center;"><img src="images/seriallink.png" alt="seriallink" style="width: 400px;"/></p>
+    <p>Now you can connect the Arduino UNO to CodeSkool by going to the <em>Connect</em> menu and click the <em>Connect board</em> menu item.
+    Then you have to click <em>Connect manually</em> button in the pop up dialog and enter the local IP address: 127.0.0.1 in the text box and click OK.
+    </p>
+    <p style="text-align: center;"><img src="images/ipaddress.png" alt="ipaddress" style="width: 400px;"/></p>
+    <p>It will now show you that the device is connected. Close the dialog and you are ready to use the Arduino UNO in CodeSkool.</p>
+    <p style="text-align: center;"><img src="images/connected.png" alt="connected" style="width: 400px;"/></p>
+    <p>Now use the Arduino UNO blocks to write your first program to blink the LED connected to pin 13 of the Arduino UNO.</p>
+    <p style="text-align: center;"><img src="images/blinkuno.png" alt="blink uno" style="width: 400px;"/></p>
+    <p>Click the <em>Green Flag</em> button above stage to run the program. You will see the LED blinking.</p>
+    <p style="text-align: center;"><img src="images/arduino_blink.gif" alt="blink uno run" style="width: 400px;"/></p>
+    <p>Hurray! You have successfully connected the Arduino UNO to CodeSkool IDE and written your first program.</p>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
