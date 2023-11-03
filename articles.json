@@ -1,0 +1,26 @@
+{
+    "arduino-getting-started": {
+        "name": "Arduino UNO: Getting Started",
+        "description": "How to use the serial firmware with CodeSkool in Live or Stage Mode.",
+        "tags": ["arduino"],
+        "img": "https://knowledge.codeskool.cc/assets/images/arduino_getting_started.jpg",
+        "insetIconURL": "iconArduino",
+        "urlId": "arduino-uno-getting-started"
+    },
+    "arduino-blocks": {
+        "name": "Arduino UNO: Supported Blocks List",
+        "description": "List of the blocks that can be used with the Arduino Uno serial firmware.",
+        "tags": ["arduino"],
+        "img": "https://knowledge.codeskool.cc/assets/images/arduino_blocks.jpg",
+        "insetIconURL": "iconArduino",
+        "urlId": "arduino-codeskool-blocks-list"
+    },
+    "picow-getting-started": {
+        "name": "Raspberry Pico W: Getting Started",
+        "description": "Getting started with the Raspberry Pico W BLE and CodeSkool.",
+        "tags": ["arduino"],
+        "img": "https://knowledge.codeskool.cc/assets/images/picow_getting_started.jpg",
+        "insetIconURL": "iconArduino",
+        "urlId": "arduino-codeskool-blocks-list"
+    }
+}
