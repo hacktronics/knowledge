@@ -3,10 +3,12 @@ window.addEventListener("load", () => {
   var len = imgs.length;
 
   [].forEach.call(imgs, function(img) {
-    if(img.complete)
-      resizeImage(img);
-    else
-      img.addEventListener('load', () => resizeImage(img), false);
+    if(img.classList.contains('blocks')) {
+      if(img.complete)
+        resizeImage(img);
+      else
+        img.addEventListener('load', () => resizeImage(img), false);
+    }
   });
 
   function resizeImage(img) {
