@@ -8,7 +8,7 @@
         "urlId": "arduino-uno-getting-started"
     },
     "arduino-blocks": {
-        "name": "Arduino UNO R3: Supported Blocks List",
+        "name": "Arduino UNO R3: Supported Blocks",
         "description": "List of the blocks that can be used with the Arduino Uno serial firmware.",
         "tags": ["arduino"],
         "img": "https://knowledge.codeskool.cc/assets/images/arduino_blocks.jpg",
