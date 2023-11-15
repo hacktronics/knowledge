@@ -81,6 +81,15 @@
     <p style="text-align: center;">
         <img src="images/serialmonitor.png" alt="Serial Monitor" style="width: 600px;"/>
     </p>
+    <p>Before you connect to the ESP32 board from the CodeSkool IDE, you have to allow the connection to websockets from the SSL secured IDE.
+        You can do this by clicking the settings or lock icon in the URL address bar and then click the <em>Site settings</em> button.
+        </p>
+        <p style="text-align: center;"><img src="../arduino-uno-getting-started/images/sitesettings.png" alt="site settings" style="width: 400px;"/></p>
+        <p>Now you have to allow <em>Insecure content</em>, so that the IDE can connect to the ESP32 device which does not uses the SSL and is
+        running locally to the IDE which is a SSL secured website and running on HTTPS connection.</p>
+        <p style="text-align: center;"><img src="../arduino-uno-getting-started/images/insecurecontent.png" alt="insecure content" style="width: 600px;"/></p>
+        <p>Once you have allowed the insecure content, you need to refresh the CodeSkool IDE, by pressing the <em>Ctrl + F5</em> keys.
+        Now you are good to go and connect the ESP32 OctoStudio middleware to CodeSkool IDE.</p>
     <p>
         Now you can connect the ESP32 device to CodeSkool IDE by using the connect block from the OctoStudio extension. You need to enter the IP address of the ESP32 device
         in the text box of the connect block. Then you can use the various blocks from the OctoStudio extension to control the OctoStudio app.
@@ -94,7 +103,8 @@
     <p style="text-align: center;">
         <img src="images/beamblock.png" alt="Beam" style="width: 300px;"/>
     </p>
-    <p>You can use the when shape received hat block to detect when the shape is received from the OctoStudio app using the <em>beam to phones</em> block.
+    <p>You can use the when shape received hat block to detect when the shape is received from the OctoStudio app send using the <em>beam to phones</em> block in the 
+        OctoStudio app.
     </p>
     <p style="text-align: center;">
         <img src="images/whenshapereceived.png" alt="When Shape Received" style="width: 300px;"/>
