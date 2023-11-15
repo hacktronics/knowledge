@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSkool: Getting started with OctoStudio App</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <p><a href="https://octostudio.org/" target="_blank" title="OctoStudio">OctoStudio</a> is a free coding app that transforms how young people 
+        use mobile phones and tablets, enabling them to create their own stories and games anytime, anywhere. 
+        Children can take photos and record sounds, bring them to life with coding blocks, and send their projects to friends and family.</p>
+    <p>OctoStudio is a block-based coding app that enables students to make simple animations and games using characters and sounds that they choose. 
+        OctoStudio was developed by the Lifelong Kindergarten group at MIT Media Lab and is available for free on iPhones, iPads, and Android smartphones and tablets.</p>
+    <p>OctoStudio is a free app that you can download from the <a href="https://play.google.com/store/apps/details?id=edu.mit.octostudio" target="_blank" 
+        title="OctoStudio on Google Play">Google Play Store</a> or 
+        <a href="https://apps.apple.com/us/app/octostudio/id6461573316" target="_blank" title="OctoStudio on App Store">Apple App Store</a>.</p>
+    <p style="text-align: center;">
+        <img src="images/octostudioapp.jpeg" alt="OctoStudio" style="width: 300px;"/>
+    </p>
+    <p>OctoStudio supports various phone sensors like magnet detection, tilt detection, etc. which you can integrate with your CodeSkool project.
+        OctoStudio has radio mode, which uses BLE for communication between two devices. You can use this feature to create multiplayer games or enhance
+        your OctoStudio project with CodeSkool Artificial Intelligence and Machine Learning Scratch coding blocks.
+        We can read these BLE packets or send these BLE packets from CodeSkool IDE to communicate with the OctoStudio app.
+    </p>
+    <p>As its hard for a PC to capture and broadcast such BLE packets, we will use a microcontroller to do this job. 
+        We will use a standard ESP32 board for this purpose.
+    </p>
+    <p style="text-align: center;"><img src="images/esp32.png" alt="OctoStudio" style="width: 400px;"/></p>
+    <p>First we need to prepare our microcontroller, by flashing it with the firmware, which you can download from the <em>OctoStudio extension</em>
+        in the CodeSkool extensions manager.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/downloadfirmware.png" alt="Download Firmware" style="width: 300px;"/>
+    </p>
+    <p>You would also need to download the <a href="downloads/flash_download_tool_3.9.5.zip" target="_blank" title="Flash Download Tool">Flash Download Tool</a>.
+        This tool is used to flash the firmware on the ESP32 board. Now connect your ESP32 board to your computer, run the flash download tool and select the
+        chip type as ESP32.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/devicetype.png" alt="Flash Download Tool" style="width: 250px;"/>
+    </p>
+    <p>
+        Then select the downloaded firmware and set the address to flash as 0x0000. Now click the start button to flash the firmware on the ESP32 board.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/flashfirmware.png" alt="Flash Firmware" style="width: 400px;"/>
+    </p>
+    <p>
+        You need to press the <em>BOOT</em> button on your ESP32 device, and keep it pressed while you click the start button in the flash download tool.
+        The flash download tool will start flashing the firmware on the ESP32 board. Once the flashing starts, you can release the <em>BOOT</em> button.
+        After few seconds, the flashing will be complete and you will see the following screen.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/flashcomplete.png" alt="Flash Complete" style="width: 400px;"/>
+    </p>
+    <p>
+        Now you can unplug your ESP32 device, and plug it again to the USB cable. You will see a new WiFi network with the name <em>OctoStudio</em>. Connect to this WiFi network.
+        You will be prompted to enter the password, which is <em>CodeSkool</em>. 
+    </p>
+    <p style="text-align: center;">
+        <img src="images/wifipassword.jpeg" alt="WiFi Password" style="width: 300px;"/>
+    </p>
+    <p>Once you are connected to this WiFi network, you will be promoted to Sign in to the WiFi network. You will be greeted with the following screen to configure your WiFi network.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/wifisetup.jpeg" alt="Login to WiFi network" style="width: 300px;"/>
+    </p>
+    <p>Select the <em>Configure WiFi</em> button and enter your home WiFi network name and password. Then click the <em>Save</em> button.</p>
+    <p style="text-align: center;">
+        <img src="images/wificredentials.jpeg" alt="WiFi Setup" style="width: 300px;"/>
+    <p>
+        Your ESP32 device will now reboot and connect to your home WiFi network. 
+    </p>
+    <p style="text-align: center;">
+        <img src="images/wifisaved.jpeg" alt="WiFi Saved" style="width: 300px;"/>
+    </p>
+    <p>Now you can use Putty or some other tool to get the IP address of the ESP32 device. You can connect to the device serial port using the baud rate of 115200.
+        You will see the IP address of the device in the serial monitor.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/serialmonitor.png" alt="Serial Monitor" style="width: 600px;"/>
+    </p>
+    <p>
+        Now you can connect the ESP32 device to CodeSkool IDE by using the connect block from the OctoStudio extension. You need to enter the IP address of the ESP32 device
+        in the text box of the connect block. Then you can use the various blocks from the OctoStudio extension to control the OctoStudio app.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/connectblock.png" alt="OctoStudio Extension" style="width: 300px;"/>
+    </p>
+    <p>You can now use the various blocks from the OctoStudio extension to communicate with the OctoStudio app. You can use the beam blocks to send a shape to the OctoStudio app.
+        In the OctoStudio app, you can use the <em>wait for beam</em> block to wait for the shape to be received from CodeSkool IDE.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/beamblock.png" alt="Beam" style="width: 300px;"/>
+    </p>
+    <p>You can use the when shape received hat block to detect when the shape is received from the OctoStudio app using the <em>beam to phones</em> block.
+    </p>
+    <p style="text-align: center;">
+        <img src="images/whenshapereceived.png" alt="When Shape Received" style="width: 300px;"/>
+    </p>
+    <p>You can combine various CodeSkool and OctoStudio blocks to create your own games and apps.
+    </p>
+    <p style="text-align: center;"><img src="images/octostudioext.png" alt="OctoStudio Extension" width="800px;"/></p>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

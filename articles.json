@@ -14,5 +14,13 @@
         "img": "https://knowledge.codeskool.cc/assets/images/arduino_blocks.jpg",
         "insetIconURL": "iconArduino",
         "urlId": "arduino-codeskool-blocks-list"
+    },
+    "octostudio-getting-started": {
+        "name": "OctoStudio: Getting Started",
+        "description": "Connect OctoStudio app to CodeSkool and make interactive games, etc.",
+        "tags": ["scratch"],
+        "img": "https://knowledge.codeskool.cc/assets/images/octostudio_getting_started.jpg",
+        "insetIconURL": "iconBlockly",
+        "urlId": "octostudio-getting-started"
     }
 }
