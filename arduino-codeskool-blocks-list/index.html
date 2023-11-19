@@ -41,6 +41,10 @@
         </li>
         <li><em>16x02 I2C LCD initialization</em><br/>
             <img src="images/lcdinit.png" alt="16x02 I2C LCD initialization" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> If the LCD was already initialized during previous execution, 
+                you need to reset your board, before calling this function again. Just reboot your board, before you click the green flag to run your program,
+                to avoid issues with the previously executed blocks modifying the internal state causing interference with the current execution.
+            </p>
         </li>
         <li><em>Turn LCD backlight on</em><br/>
             <img src="images/lcdbacklight.png" alt="Turn LCD backlight on" class="blocks" />
