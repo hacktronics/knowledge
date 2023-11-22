@@ -29,6 +29,6 @@
         "tags": ["arduino"],
         "img": "https://knowledge.codeskool.cc/assets/images/picow_blocks.jpg",
         "insetIconURL": "iconArduino",
-        "urlId": "arduino-codeskool-blocks-list"
+        "urlId": "picow-codeskool-blocks-list"
     }
 }
