@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSkool: List of supported Arduino blocks</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <p>
+        Raspberry Pi Pico W is a low-cost, high-performance microcontroller board and has on-board single-band 2.4GHz wireless interfaces supporting Bluetooth 5.2 and 802.11n.
+        Pico W is also one of the easiest microcontroller board to get started with CodeSkool IDE. Just connect to the board via BLE and start coding in CodeSkool Scratch coding environment.
+        Here are the list of blocks that are supported in stage mode for Raspberry Pi Pico W firmware. 
+    </p>
+    <ul>
+        <li><em>pinMode</em><br/>
+            <img src="../assets/images/blocks/pinmode.png" alt="pinMode" class="blocks" />
+        </li>
+        <li><em>digitalWrite</em><br/>
+            <img src="../assets/images/blocks/digitalwrite.png" alt="digitalWrite" class="blocks" />
+        </li>
+        <li><em>digitalRead</em><br/>
+            <img src="../assets/images/blocks/digitalread.png" alt="digitalRead" class="blocks" />
+        </li>
+        <li><em>analogRead</em><br/>
+            <img src="../assets/images/blocks/analogread.png" alt="analogRead" class="blocks" />
+        </li>
+        <li><em>analogWrite</em><br/>
+            <img src="../assets/images/blocks/analogwrite.png" alt="analogWrite" class="blocks" />
+        </li>
+        <li><em>tone</em><br/>
+            <img src="../assets/images/blocks/tone.png" alt="tone" class="blocks" />
+        </li>
+        <li><em>attachInterrupt</em><br/>
+            <img src="../assets/images/blocks/attachinterrupt.png" alt="attachInterrupt" class="blocks" />
+        </li>
+        <li><em>detachInterrupt</em><br/>
+            <img src="../assets/images/blocks/detachinterrupt.png" alt="detachInterrupt" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This blocks can only support upto 3 different interrupts. 
+            Also we recommend resetting the pico W board, and connecting again, before executing another program.</p>
+        </li>
+        <li><em>16x02 I2C LCD initialization</em><br/>
+            <img src="../assets/images/blocks/lcdinit.png" alt="16x02 I2C LCD initialization" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> If the LCD was already initialized during previous execution, 
+                you need to reset your board, before calling this function again. Just reboot your board, before you click the green flag to run your program,
+                to avoid issues with the previously executed blocks modifying the internal state causing interference with the current execution.
+            </p>
+        </li>
+        <li><em>Turn LCD backlight on</em><br/>
+            <img src="../assets/images/blocks/lcdbacklight.png" alt="Turn LCD backlight on" class="blocks" />
+        </li>
+        <li><em>Clear the LCD</em><br/>
+            <img src="../assets/images/blocks/lcdclear.png" alt="Clear the LCD" class="blocks" />
+        </li>
+        <li><em>Set cursor position on LCD</em><br/>
+            <img src="../assets/images/blocks/lcdsetcursor.png" alt="Set LCD cursor position" class="blocks" />
+        </li>
+        <li><em>Print string on LCD</em><br/>
+            <img src="../assets/images/blocks/lcdprint.png" alt="Print string on LCD" class="blocks" />
+        </li>
+        <li><em>Print char on LCD</em><br/>
+            <img src="../assets/images/blocks/lcdprintchar.png" alt="Print char on LCD" class="blocks" />
+        </li>
+        <li><em>Print number on LCD</em><br/>
+            <img src="../assets/images/blocks/lcdprintnum.png" alt="Print number on LCD" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This blocks internally converts the number to string, and use the string display function on the I2C LCD.</p>
+        </li>
+        <li><em>Create custom font character for LCD</em><br/>
+            <img src="../assets/images/blocks/lcdcreatechar.png" alt="Create custom font character for LCD" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> After calling this function, please clear the LCD for the new character font to be initialized.
+                The first argument is the character code of the custom character, which can be used in the <em>lcd.print(char)</em> block to print the custom character.
+            </p>
+        </li>
+        <li>
+            <em>Initialize OLED lcd</em><br/>
+            <img src="../assets/images/blocks/oledbegin.png" alt="Initialize OLED lcd" class="blocks" />
+        </li>
+        <li>
+            <em>Clear OLED lcd</em><br/>
+            <img src="../assets/images/blocks/oledclear.png" alt="Clear OLED lcd" class="blocks" />
+        </li>
+        <li>
+            <em>Display buffer on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddisplay.png" alt="Display buffer on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Set the cursor position on OLED</em><br/>
+            <img src="../assets/images/blocks/oledsetcursor.png" alt="Set the cursor position on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Set the text size on OLED</em><br/>
+            <img src="../assets/images/blocks/oledsettextsize.png" alt="Set the text size on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Set the text color on OLED</em><br/>
+            <img src="../assets/images/blocks/oledsettextcolor.png" alt="Set the text color on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Print string on OLED</em><br/>
+            <img src="../assets/images/blocks/oledprint.png" alt="Print string on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Print string on OLED and move to next line</em><br/>
+            <img src="../assets/images/blocks/oledprintln.png" alt="Print string on OLED and move to next line" class="blocks" />
+        </li>
+        <li>
+            <em>Draw pixel on OLED</em><br/>
+            <img src="../assets/images/blocks/oledrawpixel.png" alt="Draw pixel on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw line on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddrawline.png" alt="Draw line on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw rectangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddrawrect.png" alt="Draw rectangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a filled rectangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oledfillrect.png" alt="Fill rectangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw rounded rectangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddrawroundrect.png" alt="Draw rounded rectangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a filled rounded rectangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oledfillroundrect.png" alt="Fill rounded rectangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a circle on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddrawcircle.png" alt="Draw circle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a filled circle on OLED</em><br/>
+            <img src="../assets/images/blocks/oledfillcircle.png" alt="Fill circle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a triangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oleddrawtriangle.png" alt="Draw triangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Draw a filled triangle on OLED</em><br/>
+            <img src="../assets/images/blocks/oledfilltriangle.png" alt="Fill triangle on OLED" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize TM1637 7-segment display</em><br/>
+            <img src="../assets/images/blocks/tm1637init.png" alt="Initialize TM1637 7-segment display" class="blocks" />
+        </li>
+        <li>
+            <em>Set brightness of TM1637 7-segment display</em><br/>
+            <img src="../assets/images/blocks/tm1637setbrightness.png" alt="Set brightness of TM1637 7-segment display" class="blocks" />
+        </li>
+        <li>
+            <em>Clear TM1637 7-segment display</em><br/>
+            <img src="../assets/images/blocks/tm1637clear.png" alt="Clear TM1637 7-segment display" class="blocks" />
+        </li>
+        <li>
+            <em>Show decimal number on TM1637 7-segment display</em><br/>
+            <img src="../assets/images/blocks/tm1637shownumdec.png" alt="Show decimal number on TM1637 7-segment display" class="blocks" />
+        </li>
+        <li>
+            <em>Show decimal number on TM1637 7-segment display with leading zeros</em><br/>
+            <img src="../assets/images/blocks/tm1637shownumdecex.png" alt="Show decimal number on TM1637 7-segment display with leading zeros" class="blocks" />
+        </li>
+        <li>
+            <em>Set segments on TM1637 7-segment display</em><br/>
+            <img src="../assets/images/blocks/tm1637setsegments.png" alt="Set segments on TM1637 7-segment display" class="blocks" />
+        </li>
+        <li><em>Initialize the HC-SR04 ultrasonic distance measurement sensor</em><br/>
+            <img src="../assets/images/blocks/ultrasonicdistance.png" alt="Initialize the HC-SR04 ultrasonic distance measurement sensor" class="blocks" />
+        </li>
+        <li><em>Get distance reading from the ultrasonic sensor</em><br/>
+            <img src="../assets/images/blocks/measuredistance.png" alt="Get distance reading from the ultrasonic sensor" class="blocks" />
+        </li>
+        <li><em>Initialize the DHT11 temperature and humidity sensor</em><br/>
+            <img src="../assets/images/blocks/dht11.png" alt="Initialize the DHT11 temperature and humidity sensor" class="blocks" />
+        </li>
+        <li><em>Start the DHT11 sensor</em><br/>
+            <img src="../assets/images/blocks/dht11begin.png" alt="Start the DHT11 sensor" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller, and not required for the sensor to work. This is just to make the blocks look similar to the Arduino blocks.</p>
+        </li>
+        <li><em>Read humidity from the sensor</em><br/>
+            <img src="../assets/images/blocks/readhumidity.png" alt="Read humidity from the sensor" class="blocks" />
+        </li>
+        <li><em>Read temperature reading in celsius or fahrenheit from sensor</em><br/>
+            <img src="../assets/images/blocks/readtemp.png" alt="Read temperature reading in celsius or fahrenheit from sensor" class="blocks" />
+        </li>
+        <li><em>Initialize the RGB NeoPixels LEDs</em><br/>
+            <img src="../assets/images/blocks/neopixelinit.png" alt="Initialize the RGB NeoPixels LEDs" class="blocks" />
+        </li>
+        <li><em>Start the NeoPixels strip</em><br/>
+            <img src="../assets/images/blocks/pixelsbegin.png" alt="Start the NeoPixels strip" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller, and not required for the sensor to work. This is just to make the blocks look similar to the Arduino blocks.</p>
+        </li>
+        <li><em>Clear the NeoPixels strip</em><br/>
+            <img src="../assets/images/blocks/pixelsclear.png" alt="Clear the NeoPixels strip" class="blocks" />
+        </li>
+        <li><em>Create color from separate Red, Green and Blue values</em><br/>
+            <img src="../assets/images/blocks/pixelscolor.png" alt="Create color from separate Red, Green and Blue values" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. This is a Scratch utility block that is executed in the Scratch runtime itself.</p>
+        </li>
+        <li><em>Set the NeoPixel color</em><br/>
+            <img src="../assets/images/blocks/setpixelcolor.png" alt="Set the NeoPixel color" class="blocks" />
+        </li>
+        <li><em>Set the NeoPixel color using separate Red, Green and Blue values</em><br/>
+            <img src="../assets/images/blocks/setpixelcolor2.png" alt="Set the NeoPixel color using separate Red, Green and Blue values" class="blocks" />
+        </li>
+        <li><em>Show the colors on NeoPixels from buffer</em><br/>
+            <img src="../assets/images/blocks/pixelsshow.png" alt="Show the colors on NeoPixels from buffer" class="blocks" />
+        </li>
+        <li><em>Initialize Servo</em><br/>
+            <img src="../assets/images/blocks/servo.png" alt="Initialize Servo" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
+                But this is a required Scratch utility block that is executed in the Scratch runtime itself to initialize the servo.</p>
+        </li>
+        <li><em>Attach the servo to the microcontroller pin</em><br/>
+            <img src="../assets/images/blocks/servoattach.png" alt="Attach the servo to the microcontroller pin" class="blocks" />
+        </li>
+        <li><em>Set the servo horn to a particular angle</em><br/>
+            <img src="../assets/images/blocks/servowrite.png" alt="Set the servo horn to a particular angle" class="blocks" />
+        </li>
+        <li><em>Initialize IR receiver</em><br/>
+            <img src="../assets/images/blocks/irreceiverbegin.png" alt="Initialize IR receiver" class="blocks" />
+        </li>
+        <li><em>Decode IR signal</em><br/>
+            <img src="../assets/images/blocks/irreceiverdecode.png" alt="Decode IR signal" class="blocks" />
+        </li>
+        <li><em>Resume IR receiver</em><br/>
+            <img src="../assets/images/blocks/irreceiverresume.png" alt="Resume IR receiver" class="blocks" />
+        </li>
+        <li><em>Get decoded command from IR receiver</em><br/>
+            <img src="../assets/images/blocks/irreceiverdecodedcommand.png" alt="Get decoded command from IR receiver" class="blocks" />
+        </li>
+        <li><em>Get decoded protocol from IR receiver</em><br/>
+            <img src="../assets/images/blocks/irreceiverdecodedprotocol.png" alt="Get decoded protocol from IR receiver" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize SGP40 air quality sensor</em><br/>
+            <img src="../assets/images/blocks/sgp40begin.png" alt="Initialize SGP40 air quality sensor" class="blocks" />
+        </li>
+        <li>
+            <em>Measure raw signal from SGP40 air quality sensor</em><br/>
+            <img src="../assets/images/blocks/sgp40measureraw.png" alt="Measure raw signal from SGP40 air quality sensor" class="blocks" />
+        </li>
+        <li>
+            <em>Measure VOC from SGP40 air quality sensor</em><br/>
+            <img src="../assets/images/blocks/sgp40measurevoc.png" alt="Measure VOC from SGP40 air quality sensor" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize Membrane keypad</em><br/>
+            <img src="../assets/images/blocks/keypadinit.png" alt="Initialize 4x4 keypad" class="blocks" />        
+        </li>
+        <li>
+            <em>Get key pressed on the keypad</em><br/>
+            <img src="../assets/images/blocks/keypadgetkey.png" alt="Get key pressed on Membrane keypad" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize 4x4 keypad pins</em><br/>
+            <img src="../assets/images/blocks/keypad4pins.png" alt="Initialize 4x4 keypad pins" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
+                But this is a required Scratch utility block that is executed in the Scratch runtime itself to initialize the keypad.</p>
+        </li>
+        <li>
+            <em>Initialize 4x3 keypad pins</em><br/>
+            <img src="../assets/images/blocks/keypad3pins.png" alt="Initialize 4x3 keypad pins" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
+                But this is a required Scratch utility block that is executed in the Scratch runtime itself to initialize the keypad.</p>
+        </li>
+        <li>
+            <em>Get no key pressed string for comparison</em><br/>
+            <img src="../assets/images/blocks/keypadnokey.png" alt="Get no key pressed on Membrane keypad" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
+                This is just a utility block to get the string that is returned when no key is pressed on the keypad.</p>
+        </li>
+        <li>
+            <em>Initialize MFRC522 RFID reader</em><br/>
+            <img src="../assets/images/blocks/mfrc522init.png" alt="Initialize MFRC522 RFID reader" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize MFRC522 RFID reader PCD</em><br/>
+            <img src="../assets/images/blocks/mfrc522pcdinit.png" alt="Initialize MFRC522 RFID reader PCD" class="blocks" />
+        </li>
+        <li>
+            <em>Check if new card is present on MFRC522 RFID reader</em><br/>
+            <img src="../assets/images/blocks/mfrc522isnewcard.png" alt="Check if new card is present on MFRC522 RFID reader" class="blocks" />
+        </li>
+        <li>
+            <em>Read card serial from MFRC522 RFID reader</em><br/>
+            <img src="../assets/images/blocks/mfrc522readcardserial.png" alt="Read card serial from MFRC522 RFID reader" class="blocks" />
+        </li>
+        <li>
+            <em>Get card ID from MFRC522 RFID reader</em><br/>
+            <img src="../assets/images/blocks/mfrc522getcardid.png" alt="Get card ID from MFRC522 RFID reader" class="blocks" />
+        </li>
+        <li>
+            <em>Halt MFRC522 RFID reader</em><br/>
+            <img src="../assets/images/blocks/mfrc522halta.png" alt="Halt MFRC522 RFID reader" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize rotary encoder</em><br/>
+            <img src="../assets/images/blocks/rotartyinit.png" alt="Initialize rotary encoder" class="blocks" />
+        </li>
+        <li>
+            <em>Get rotary encoder counter value</em><br/>
+            <img src="../assets/images/blocks/rotartycounter.png" alt="Get rotary encoder counter value" class="blocks" />
+        </li>
+        <li>
+            <em>Get rotary encoder direction</em><br/>
+            <img src="../assets/images/blocks/rotartydirection.png" alt="Get rotary encoder direction" class="blocks" />
+        </li>
+        <li>
+            <em>Initialize Pico W Robot</em><br/>
+            <img src="../assets/images/blocks/picorobotinit.png" alt="Initialize PicoRobot" class="blocks" />
+        </li>
+        <li>
+            <em>Move Pico W Robot forward</em><br/>
+            <img src="../assets/images/blocks/picorobotforward.png" alt="Move PicoRobot forward" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> It takes speed as a parameter with value range from 0 to 1.</p>
+        </li>
+        <li>
+            <em>Move Pico W Robot backward</em><br/>
+            <img src="../assets/images/blocks/picorobotbackward.png" alt="Move PicoRobot backward" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> It takes speed as a parameter with value range from 0 to 1.</p>
+        </li>
+        <li>
+            <em>Turn Pico W Robot left</em><br/>
+            <img src="../assets/images/blocks/picorobotleft.png" alt="Turn PicoRobot left" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> It takes speed as a parameter with value range from 0 to 1.</p>
+        </li>
+        <li>
+            <em>Turn Pico W Robot right</em><br/>
+            <img src="../assets/images/blocks/picorobotright.png" alt="Turn PicoRobot right" class="blocks" />
+            <p><em style="color: firebrick;">NOTE:</em> It takes speed as a parameter with value range from 0 to 1.</p>
+        </li>
+        <li>
+            <em>Stop Pico W Robot</em><br/>
+            <img src="../assets/images/blocks/picorobotstop.png" alt="Stop PicoRobot" class="blocks" />
+        </li>
+    </ul>
+    <p>Arduino functions like <em>delay</em>, etc. will not be supported as it will cause the firmware to be blocked. 
+    Also the <em>wait</em> Scratch blocks offers the same functionality. Similarly, functions like <em>map</em>, etc. 
+    are executed in the Scratch runtime itself and does not require a physical hardware to run.</p>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
