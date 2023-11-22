@@ -10,8 +10,32 @@
     <p>
         Raspberry Pi Pico W is a low-cost, high-performance microcontroller board and has on-board single-band 2.4GHz wireless interfaces supporting Bluetooth 5.2 and 802.11n.
         Pico W is also one of the easiest microcontroller board to get started with CodeSkool IDE. Just connect to the board via BLE and start coding in CodeSkool Scratch coding environment.
-        Here are the list of blocks that are supported in stage mode for Raspberry Pi Pico W firmware. 
     </p>
+    <p>
+        Pico W module supports the following features:
+        <ul>
+            <li><a href="#arduino">Arduino Library</a></li>
+            <li><a href="#interrupts">Interrupts</a></li>
+            <li><a href="#1602lcd">16x02 I2C LCD</a></li>
+            <li><a href="#oled">I2C OLED</a></li>
+            <li><a href="#tm1637">TM1637 7-segment display</a></li>
+            <li><a href="#hcsr04">HC-SR04 ultrasonic distance measurement</a></li>
+            <li><a href="#dht11">DHT11 temperature and humidity</a></li>
+            <li><a href="#neopixels">NeoPixels RGB LEDs</a></li>
+            <li><a href="#servos">Servos</a></li>
+            <li><a href="#irreceiver">IR receiver</a></li>
+            <li><a href="#sgp40">SGP40 air quality sensor</a></li>
+            <li><a href="#membrane">Membrane keypad</a></li>
+            <li><a href="#mfrc522">MFRC522 RFID reader</a></li>
+            <li><a href="#rotary">Rotary encoder</a></li>
+            <li><a href="#picowrobot">Pico W Robot</a></li>
+        </ul>
+
+    </p>
+    <p>
+        Here are the complete list of blocks that are supported in stage mode for Raspberry Pi Pico W firmware. 
+    </p>
+    <h4 id="arduino">Arduino Library</h4>
     <ul>
         <li><em>pinMode</em><br/>
             <img src="../assets/images/blocks/pinmode.png" alt="pinMode" class="blocks" />
@@ -31,6 +55,9 @@
         <li><em>tone</em><br/>
             <img src="../assets/images/blocks/tone.png" alt="tone" class="blocks" />
         </li>
+    </ul>
+    <h4 id="interrupts">Interrupts</h4>
+    <ul>
         <li><em>attachInterrupt</em><br/>
             <img src="../assets/images/blocks/attachinterrupt.png" alt="attachInterrupt" class="blocks" />
         </li>
@@ -39,6 +66,9 @@
             <p><em style="color: firebrick;">NOTE:</em> This blocks can only support upto 3 different interrupts. 
             Also we recommend resetting the pico W board, and connecting again, before executing another program.</p>
         </li>
+    </ul>
+    <h4 id="1602lcd">16x02 I2C LCD</h4>
+    <ul>
         <li><em>16x02 I2C LCD initialization</em><br/>
             <img src="../assets/images/blocks/lcdinit.png" alt="16x02 I2C LCD initialization" class="blocks" />
             <p><em style="color: firebrick;">NOTE:</em> If the LCD was already initialized during previous execution, 
@@ -71,6 +101,9 @@
                 The first argument is the character code of the custom character, which can be used in the <em>lcd.print(char)</em> block to print the custom character.
             </p>
         </li>
+    </ul>
+    <h4 id="oled">I2C OLED</h4>
+    <ul>
         <li>
             <em>Initialize OLED lcd</em><br/>
             <img src="../assets/images/blocks/oledbegin.png" alt="Initialize OLED lcd" class="blocks" />
@@ -143,6 +176,9 @@
             <em>Draw a filled triangle on OLED</em><br/>
             <img src="../assets/images/blocks/oledfilltriangle.png" alt="Fill triangle on OLED" class="blocks" />
         </li>
+    </ul>
+    <h4 id="tm1637">TM1637 7-segment display</h4>
+    <ul>
         <li>
             <em>Initialize TM1637 7-segment display</em><br/>
             <img src="../assets/images/blocks/tm1637init.png" alt="Initialize TM1637 7-segment display" class="blocks" />
@@ -167,12 +203,18 @@
             <em>Set segments on TM1637 7-segment display</em><br/>
             <img src="../assets/images/blocks/tm1637setsegments.png" alt="Set segments on TM1637 7-segment display" class="blocks" />
         </li>
+    </ul>
+    <h4 id="hcsr04">HC-SR04 ultrasonic distance measurement</h4>
+    <ul>
         <li><em>Initialize the HC-SR04 ultrasonic distance measurement sensor</em><br/>
             <img src="../assets/images/blocks/ultrasonicdistance.png" alt="Initialize the HC-SR04 ultrasonic distance measurement sensor" class="blocks" />
         </li>
         <li><em>Get distance reading from the ultrasonic sensor</em><br/>
             <img src="../assets/images/blocks/measuredistance.png" alt="Get distance reading from the ultrasonic sensor" class="blocks" />
         </li>
+    </ul>
+    <h4 id="dht11">DHT11 temperature and humidity</h4>
+    <ul>
         <li><em>Initialize the DHT11 temperature and humidity sensor</em><br/>
             <img src="../assets/images/blocks/dht11.png" alt="Initialize the DHT11 temperature and humidity sensor" class="blocks" />
         </li>
@@ -186,6 +228,9 @@
         <li><em>Read temperature reading in celsius or fahrenheit from sensor</em><br/>
             <img src="../assets/images/blocks/readtemp.png" alt="Read temperature reading in celsius or fahrenheit from sensor" class="blocks" />
         </li>
+    </ul>
+    <h4 id="neopixels">NeoPixels RGB LEDs</h4>
+    <ul>
         <li><em>Initialize the RGB NeoPixels LEDs</em><br/>
             <img src="../assets/images/blocks/neopixelinit.png" alt="Initialize the RGB NeoPixels LEDs" class="blocks" />
         </li>
@@ -209,6 +254,9 @@
         <li><em>Show the colors on NeoPixels from buffer</em><br/>
             <img src="../assets/images/blocks/pixelsshow.png" alt="Show the colors on NeoPixels from buffer" class="blocks" />
         </li>
+    </ul>
+    <h4 id="servos">Servos</h4>
+    <ul>
         <li><em>Initialize Servo</em><br/>
             <img src="../assets/images/blocks/servo.png" alt="Initialize Servo" class="blocks" />
             <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
@@ -220,6 +268,9 @@
         <li><em>Set the servo horn to a particular angle</em><br/>
             <img src="../assets/images/blocks/servowrite.png" alt="Set the servo horn to a particular angle" class="blocks" />
         </li>
+    </ul>
+    <h4 id="irreceiver">IR receiver</h4>
+    <ul>
         <li><em>Initialize IR receiver</em><br/>
             <img src="../assets/images/blocks/irreceiverbegin.png" alt="Initialize IR receiver" class="blocks" />
         </li>
@@ -235,6 +286,9 @@
         <li><em>Get decoded protocol from IR receiver</em><br/>
             <img src="../assets/images/blocks/irreceiverdecodedprotocol.png" alt="Get decoded protocol from IR receiver" class="blocks" />
         </li>
+    </ul>
+    <h4 id="sgp40">SGP40 air quality sensor</h4>
+    <ul>
         <li>
             <em>Initialize SGP40 air quality sensor</em><br/>
             <img src="../assets/images/blocks/sgp40begin.png" alt="Initialize SGP40 air quality sensor" class="blocks" />
@@ -247,6 +301,9 @@
             <em>Measure VOC from SGP40 air quality sensor</em><br/>
             <img src="../assets/images/blocks/sgp40measurevoc.png" alt="Measure VOC from SGP40 air quality sensor" class="blocks" />
         </li>
+    </ul>
+    <h4 id="membrane">Membrane keypad</h4>
+    <ul>
         <li>
             <em>Initialize Membrane keypad</em><br/>
             <img src="../assets/images/blocks/keypadinit.png" alt="Initialize 4x4 keypad" class="blocks" />        
@@ -273,6 +330,9 @@
             <p><em style="color: firebrick;">NOTE:</em> This is not executed on the microcontroller. 
                 This is just a utility block to get the string that is returned when no key is pressed on the keypad.</p>
         </li>
+    </ul>
+    <h4 id="mfrc522">MFRC522 RFID reader</h4>
+    <ul>
         <li>
             <em>Initialize MFRC522 RFID reader</em><br/>
             <img src="../assets/images/blocks/mfrc522init.png" alt="Initialize MFRC522 RFID reader" class="blocks" />
@@ -297,6 +357,9 @@
             <em>Halt MFRC522 RFID reader</em><br/>
             <img src="../assets/images/blocks/mfrc522halta.png" alt="Halt MFRC522 RFID reader" class="blocks" />
         </li>
+    </ul>
+    <h4 id="rotary">Rotary encoder</h4>
+    <ul>
         <li>
             <em>Initialize rotary encoder</em><br/>
             <img src="../assets/images/blocks/rotartyinit.png" alt="Initialize rotary encoder" class="blocks" />
@@ -309,6 +372,9 @@
             <em>Get rotary encoder direction</em><br/>
             <img src="../assets/images/blocks/rotartydirection.png" alt="Get rotary encoder direction" class="blocks" />
         </li>
+    </ul>
+    <h4 id="picowrobot">Pico W Robot</h4>
+    <ul>
         <li>
             <em>Initialize Pico W Robot</em><br/>
             <img src="../assets/images/blocks/picorobotinit.png" alt="Initialize PicoRobot" class="blocks" />
