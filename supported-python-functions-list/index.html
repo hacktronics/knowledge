@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSkool: List of supported Python functions for Scratch programming</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    CodeSkool is designed to support basic Python functions for Scratch programming. While it is not intended to be a full-fledged Python game development IDE, its main purpose is to facilitate the transition from block-based programming to text-based programming. CodeSkool allows kids to learn the fundamentals of the Python programming language by converting their favorite Scratch games into Python, without having to worry about issues regarding to text editors or Python interpreters. Through the user-friendly CodeSkool web-based IDE, students can comfortably work on their projects. The CodeSkool Python API enables users to control the Scratch sprite and utilize the Pen feature to draw various shapes on the screen. Here is a list of the supported Python functions available for Scratch programming within CodeSkool.
+    <ul>
+        <li><a href="#sprite">Sprite</a></li>
+        <li><a href="#pen">Pen</a></li>
+    </ul>
+    <h4 id="sprite">Sprite</h4>
+    To make it simple for kids, we have already imported the Sprite class and created an instance of that class with the name of the sprite we want to control. The variable name of the object created for the sprite follows the snake_case convention, which is the standard way of naming variables in Python. This serves the purpose of teaching kids the correct way to name variables. Typically, sprite names consist of a single word, so there isn't much difference between using snake_case or camelCase for them. It's important to note that sprite names are case-sensitive, so it's crucial to use the correct case when referring to the sprite name. To enhance ease of use and readability, the API functions we provide use the camelCase naming convention. The following is a list of the supported Python functions for the Sprite object in CodeSkool.
+    <ul>
+        <li>moveSteps(steps)</li>
+        <li>gotoxy(x, y)</li>
+        <li>turnRight(degrees)</li>
+        <li>turnLeft(degrees)</li>
+        <li>pointInDirection(direction)</li>
+        <li>setDraggable(draggble)</li>
+        <li>glide(duration, x, y)</li>
+        <li>distanceToMousePointer()</li>
+        <li>isTouchingColor(color)</li>
+        <li>setSize(size)</li>
+        <li>changeSize(change)</li>
+        <li>changeY(change)</li>
+        <li>changeX(change)</li>
+        <li>switchCostume(costume)</li>
+        <li>nextCostume()</li>
+        <li>playSound(soundName)</li>
+        <li>stopSound()</li>
+        <li>say(say)</li>
+        <li>think(think)</li>
+        <li>show()</li>
+        <li>hide()</li>
+    </ul>
+    Apart from these functions, the sprite object supports the following getters and setters for its properties.
+    <ul>
+        <li>x</li>
+        <li>y</li>
+        <li>direction</li>
+        <li>size</li>
+    </ul>
+    <h4 id="pen">Pen</h4>
+    <ul>
+        <li>down()</li>
+        <li>up()</li>
+        <li>size(s)</li>
+        <li>alphaColor(r, g, b, a)</li>
+        <li>color(r, g, b)</li>
+        <li>line(x1, y1, x2, y2)</li>
+        <li>rect(x, y, w, h)</li>
+        <li>circle(x, y, r)</li>
+        <li>ellipse(x, y, rx, ry)</li>
+        <li>clear()</li>
+    </ul>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
