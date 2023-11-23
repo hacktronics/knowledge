@@ -30,5 +30,13 @@
         "img": "https://knowledge.codeskool.cc/assets/images/picow_blocks.jpg",
         "insetIconURL": "iconArduino",
         "urlId": "picow-codeskool-blocks-list"
+    },
+    "python-functions": {
+        "name": "Python: Supported Functions",
+        "description": "List of the functions that can be used with the Python programming.",
+        "tags": ["python"],
+        "img": "https://knowledge.codeskool.cc/assets/images/python-functions.png",
+        "insetIconURL": "iconPython",
+        "urlId": "supported-python-functions-list"
     }
 }
